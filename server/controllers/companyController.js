@@ -168,10 +168,10 @@ export const getCompanies = async (req, res, next) => {
 
     //sort
     if (sort === "Newest") {
-      queryResult = queryResult.sort("-createAt");
+      queryResult = queryResult.sort("-createdAt");
     }
     if (sort === "Oldest") {
-      queryResult = queryResult.sort("createAt");
+      queryResult = queryResult.sort("createdAt");
     }
     if (sort === "A-Z") {
       queryResult = queryResult.sort("name");
